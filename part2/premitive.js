@@ -2,7 +2,7 @@ let balance = 120
 // console.log(typeof(balance));
 let anothereBalance = new Number(129)
 // console.log(typeof balance);
-// console.log(typeof anothereBalance)
+console.log(typeof anothereBalance)
 let  isActive = true;
 const isRealyactive = new Boolean (true);
 // console.log(typeof isActive, typeof isRealyactive);
@@ -17,4 +17,11 @@ let lastName = null;
 let string = "hello world"
 let myStringone = 'hola'
 let userName = 'shzd-sha'
-console.log(typeof string, myStringone, userName);
+let greetMessage = `hello`
+// console.log(typeof string, myStringone, userName, greetMessage);
+let name = "jhone";
+let greetingMsg = `hello ${name} !`;
+// console.log(greetingMsg)
+let sm1 = Symbol();
+let sm2 = Symbol(); 
+// console.log( sm1 == sm2 )
