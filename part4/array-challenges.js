@@ -26,5 +26,11 @@ const lastOrder =  teaOrders.pop()
 const popularTea = ['greentea', 'oolongtea', 'chai']
 let softCopyTea = popularTea;
 popularTea.pop();
-console.log(softCopyTea);
-console.log(popularTea)
+// console.log(softCopyTea);
+// console.log(popularTea)
+
+const topCites = ['berlin', 'singapore', 'newyork']
+let hardcopyCities = [...topCites]
+topCites.pop();
+console.log(topCites)
+console.log(hardcopyCities)
