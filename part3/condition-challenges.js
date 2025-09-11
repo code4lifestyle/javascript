@@ -18,7 +18,31 @@ if (userString==anotherUserstring){
 // checking if variable is number or not
 let age = "22"
 if(typeof age==="number"){
-    console.log('variable age is a number')
+    // console.log('variable age is a number')
 }else{
-    console.log("age is not a number")
+    // console.log("age is not a number")
+}
+
+// checking if a bolean is true or false
+let isLogedin = false
+if(typeof isLogedin == 'boolean'){
+    // console.log("isLogedin is bolean")
+}else{
+    // console.log('no its not bolean')
+}
+// another method
+let TeaisReady = false ; 
+if(TeaisReady){
+    // console.log('yes tea is ready')
+}else{
+    // console.log("no its not ready")
+}
+
+//check if array is empty or not 
+
+let items = [1,2,3,4,5]
+if(items.length == 0){
+    console.log("array is empty")
+}else{
+    console.log('no the array contain data')
 }
