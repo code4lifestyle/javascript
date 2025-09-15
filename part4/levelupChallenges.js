@@ -8,3 +8,11 @@ for(i=0; i<Teas.length; i++){
 
 }
 console.log(selectedtea);
+let cities = ['london','newyork','paris','berlin']
+let cityVisited = []
+for(i=0; i<cities.length; i++){
+    if(cities[i]!=='paris'){
+        cityVisited.push(cities[i]);
+    }
+}
+console.log(cityVisited);
