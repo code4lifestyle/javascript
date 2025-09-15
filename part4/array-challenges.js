@@ -32,5 +32,17 @@ popularTea.pop();
 const topCites = ['berlin', 'singapore', 'newyork']
 let hardcopyCities = [...topCites]
 topCites.pop();
-console.log(topCites)
-console.log(hardcopyCities)
+// console.log(topCites)
+// console.log(hardcopyCities)
+
+const europianCities = ['parseInt', 'Rome']
+const asianCities = ['tokyo', 'bankok']
+const worlCites = europianCities.concat(asianCities)
+// console.log(worlCites)
+
+let teamenu = ['masala chai', 'oolang tea', 'green tea', 'earl tea']
+const menulength = teamenu.length
+// console.log(menulength)
+let cityBucketlist = ['tokyo', 'london', 'captown', 'vancouver']
+const isLondoninList = cityBucketlist.includes('london')
+console.log(isLondoninList);
