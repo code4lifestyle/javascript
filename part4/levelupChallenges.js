@@ -116,4 +116,14 @@ for(let i=0; i<Marks.length; i++ ){
     }
     randomMarks.push(Marks[i]*2)
 }
-console.log(randomMarks)
+// console.log(randomMarks)
+let myTeas = ['chai', 'greentea', 'oolang-tea', 'redtea','kashmiri-Tea']
+let shortTeas = [];
+for (const tea of myTeas) {
+    if(tea.length > 10){
+       break;
+    }
+     shortTeas.push(tea)
+    
+}
+console.log(shortTeas);
