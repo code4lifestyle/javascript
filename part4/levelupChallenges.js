@@ -55,12 +55,27 @@
 // }
 // console.log(smallNumber)
 
-let teas = ['greentea','blacktea','yellow','olangtea','coffe']
-let favteas = [];
-for (const tea of teas) {
-    if(tea !== 'yellow'){
-         favteas.push(tea);
-    }
-}
+// let teas = ['greentea','blacktea','yellow','olangtea','coffe']
+// let favteas = [];
+// for (const tea of teas) {
+//     if(tea !== 'yellow'){
+//          favteas.push(tea);
+//     }
+// }
 
-console.log(favteas)
+// console.log(favteas)
+let citiesPopulation = {
+    germany :120000,
+    paris : 300000,
+    hongKong : 4500000,
+    islamabad : 2200000
+}
+let cityPopulation = {}
+for (const city in citiesPopulation) {
+    if(city == "hongKong"){
+        break;
+    }
+    cityPopulation[city] = citiesPopulation[city]
+
+}
+console.log(cityPopulation)
