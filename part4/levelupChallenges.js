@@ -44,13 +44,23 @@
 //     }
     
 // }
-let numbers = [1,2,3,4,5,6]
-let smallNumber = []
-for (const number of numbers) {
-    if(number === 4){
-       break;
-    } 
-    smallNumber.push(number)
+// let numbers = [1,2,3,4,5,6]
+// let smallNumber = []
+// for (const number of numbers) {
+//     if(number === 4){
+//        break;
+//     } 
+//     smallNumber.push(number)
     
+// }
+// console.log(smallNumber)
+
+let teas = ['greentea','blacktea','yellow','olangtea','coffe']
+let favteas = [];
+for (const tea of teas) {
+    if(tea !== 'yellow'){
+         favteas.push(tea);
+    }
 }
-console.log(smallNumber)
+
+console.log(favteas)
