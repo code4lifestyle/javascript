@@ -16,25 +16,25 @@
 //     }
 // }
 // console.log(cityVisited);
-// let cities = ["london", 'paris', "newyork", 'koyoto']
-// let favCities = []
-// for(i=0; i<cities.length; i++ ){
-//     if(cities[i] !=='paris'){
-//         favCities.push(cities[i])
-//     }
-// }
+let cities = ["london", 'paris', "newyork", 'koyoto']
+let favCities = []
+for(i=0; i<cities.length; i++ ){
+    if(cities[i] !=='paris'){
+        favCities.push(cities[i])
+    }
+}
 // console.log(favCities);
-// const campaigns = [
-//   { name: "car", employees: ["azhar", "sohaib", "shehzad"] },
-//   { name: "health", employees: ["umar", "shbaz", "ali"] },
-//   { name: "mortage", employees: ["umar", "wahid", "kamran"] }
-// ];
-// const selectedCampaigns = [];
-// for (let i = 0; i < campaigns.length; i++) {
-//     if(campaigns[i].name!=="car"){
-//        selectedCampaigns.push(campaigns[i]);
-//     }
-// }
+const campaigns = [
+  { name: "car", employees: ["azhar", "sohaib", "shehzad"] },
+  { name: "health", employees: ["umar", "shbaz", "ali"] },
+  { name: "mortage", employees: ["umar", "wahid", "kamran"] }
+];
+const selectedCampaigns = [];
+for (let i = 0; i < campaigns.length; i++) {
+    if(campaigns[i].name!=="car"){
+       selectedCampaigns.push(campaigns[i]);
+    }
+}
 // console.log(selectedCampaigns);
 // let cities = ['london', 'paris','tokyo', 'islamabad']
 // let favCities = [];
@@ -44,24 +44,24 @@
 //     }
     
 // }
-// let numbers = [1,2,3,4,5,6]
-// let smallNumber = []
-// for (const number of numbers) {
-//     if(number === 4){
-//        break;
-//     } 
-//     smallNumber.push(number)
+let numbers = [1,2,3,4,5,6]
+let smallNumber = []
+for (const number of numbers) {
+    if(number === 4){
+       break;
+    } 
+    smallNumber.push(number)
     
-// }
+}
 // console.log(smallNumber)
 
-// let teas = ['greentea','blacktea','yellow','olangtea','coffe']
-// let favteas = [];
-// for (const tea of teas) {
-//     if(tea !== 'yellow'){
-//          favteas.push(tea);
-//     }
-// }
+let teas = ['greentea','blacktea','yellow','olangtea','coffe']
+let favteas = [];
+for (const tea of teas) {
+    if(tea !== 'yellow'){
+         favteas.push(tea);
+    }
+}
 
 // console.log(favteas)
 let citiesPopulation = {
@@ -71,14 +71,14 @@ let citiesPopulation = {
     islamabad : 2200000
 }
 let largestCity = {}
-// let cityPopulation = {}
-// for (const city in citiesPopulation) {
-//     if(city == "hongKong"){
-//         break;
-//     }
-//     cityPopulation[city] = citiesPopulation[city]
+let cityPopulation = {}
+for (const city in citiesPopulation) {
+    if(city == "hongKong"){
+        break;
+    }
+    cityPopulation[city] = citiesPopulation[city]
 
-// }
+}
 // console.log(cityPopulation)
 for (const cities in citiesPopulation) {
     if(citiesPopulation[cities]>300000){
@@ -120,7 +120,7 @@ for(let i=0; i<Marks.length; i++ ){
 let myTeas = ['chai', 'greentea', 'oolang-tea', 'redtea','kashmiri-Tea']
 let shortTeas = [];
 for (const tea of myTeas) {
-    if(tea.length > 10){
+    if(tea.length > 5){
        break;
     }
      shortTeas.push(tea)
