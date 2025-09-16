@@ -107,3 +107,13 @@ worldCities.forEach((element)=>{
     visitedCity.push(element)
 });
 // console.log(visitedCity)
+
+let Marks = [2,5,7,9,];
+let randomMarks = [];
+for(let i=0; i<Marks.length; i++ ){
+    if(Marks[i] === 7){
+        continue
+    }
+    randomMarks.push(Marks[i]*2)
+}
+console.log(randomMarks)
