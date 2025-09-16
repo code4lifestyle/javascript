@@ -70,12 +70,21 @@ let citiesPopulation = {
     hongKong : 4500000,
     islamabad : 2200000
 }
-let cityPopulation = {}
-for (const city in citiesPopulation) {
-    if(city == "hongKong"){
-        break;
-    }
-    cityPopulation[city] = citiesPopulation[city]
+let largestCity = {}
+// let cityPopulation = {}
+// for (const city in citiesPopulation) {
+//     if(city == "hongKong"){
+//         break;
+//     }
+//     cityPopulation[city] = citiesPopulation[city]
 
+// }
+// console.log(cityPopulation)
+for (const cities in citiesPopulation) {
+    if(citiesPopulation[cities]>300000){
+      largestCity[cities] = citiesPopulation[cities]
+    }  
+    
+     
 }
-console.log(cityPopulation)
+console.log(largestCity)
