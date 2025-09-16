@@ -24,3 +24,16 @@
 //     }
 // }
 // console.log(favCities);
+// const campaigns = [
+//   { name: "car", employees: ["azhar", "sohaib", "shehzad"] },
+//   { name: "health", employees: ["umar", "shbaz", "ali"] },
+//   { name: "mortage", employees: ["umar", "wahid", "kamran"] }
+// ];
+// const selectedCampaigns = [];
+// for (let i = 0; i < campaigns.length; i++) {
+//     if(campaigns[i].name!=="car"){
+//        selectedCampaigns.push(campaigns[i]);
+//     }
+// }
+// console.log(selectedCampaigns);
+let cities
