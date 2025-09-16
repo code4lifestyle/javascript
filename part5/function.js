@@ -16,4 +16,13 @@ const CalculateTotal = (price, quantity) => {
 return price * quantity
 }
 let totalCast = CalculateTotal(599 , 299);
-console.log(totalCast)
+// console.log(totalCast)
+function makeTea(typeofTea){
+    return `tea is ${typeofTea}`
+}
+
+function processTeaOrder(tea){
+ return tea('earlgrey')
+}
+let order = processTeaOrder(makeTea);
+console.log(order)
