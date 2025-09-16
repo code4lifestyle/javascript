@@ -87,4 +87,23 @@ for (const cities in citiesPopulation) {
     
      
 }
-console.log(largestCity)
+// console.log(largestCity)
+
+let collectionTea = ['coffe', 'blackTea', 'yellowtea', 'tea', 'oolangTea']
+let avaliableTea = [];
+collectionTea.forEach((element) => {
+    if(element == 'tea'){
+        return;
+    }
+    avaliableTea.push(element)
+});
+// console.log(avaliableTea)
+let worldCities = ['tokyo', 'berlin', 'germany', 'singapore']
+let visitedCity = []
+worldCities.forEach((element)=>{
+    if(element == 'germany'){
+        return;
+    }
+    visitedCity.push(element)
+});
+// console.log(visitedCity)
