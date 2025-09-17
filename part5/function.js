@@ -49,8 +49,16 @@
 // }
 // let orderConfirmation = orderTea('chai');
 // console.log(orderConfirmation);
-const CalculateTotal = (price, qunatity) => {
-return price * qunatity
+// const CalculateTotal = (price, qunatity) => {
+// return price * qunatity
+// }
+// let totalCost = CalculateTotal(400, 30);
+// console.log(totalCost);
+
+function createteaMaker(teaType){
+      return function(tea){
+        return `making green ${teaType}`
+    }
 }
-let totalCost = CalculateTotal(400, 30);
-console.log(totalCost);
+let teaMaker = createteaMaker("greenTea")
+console.log(teaMaker())
