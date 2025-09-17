@@ -25,4 +25,14 @@ function processTeaOrder(tea){
  return tea('earlgrey')
 }
 let order = processTeaOrder(makeTea);
-console.log(order)
+// console.log(order)
+
+function createTeamaker (){
+    return function(teaType){
+        return `making ${teaType}`
+    }
+}
+let Teamaker = createTeamaker();
+// console.log(Teamaker('greeting'));
+let result = Teamaker('greeting tea');
+console.log(result)
