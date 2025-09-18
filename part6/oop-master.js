@@ -30,3 +30,10 @@ let car = {
     }
 }
 // console.log(car.start());
+
+function Person(name,age){
+    this.name = name
+    this.age = age
+}
+let jhon  = new Person('jhon','23');
+console.log(jhon.age)
