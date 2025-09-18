@@ -53,4 +53,14 @@ function Teatype(type) {
 }
 
 let a = new Teatype();
-console.log(a.des());
+// console.log(a.des());
+
+
+function Animal(species){
+    this.species = species
+}
+Animal.prototype.sound = function(){
+    return `${this.species} make a sound`
+}
+let dog = new Animal('dog');
+console.log(dog.sound());
