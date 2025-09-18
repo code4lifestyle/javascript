@@ -48,6 +48,22 @@ Array.prototype.shehzad = function(){
     return `custom method ${this}`
     }
 let myArray = [1,2,3,4];
-console.log(myArray.shehzad())
+// console.log(myArray.shehzad())
 let mynewArray = [1,2,3,4,5,6,7];
-console.log(mynewArray.shehzad())
+// console.log(mynewArray.shehzad())
+
+class Vechile{
+    constructor(make,model){
+    this.make = make
+    this.model = model
+    }
+    start(){
+        return `this ${this.model} is car from ${this.make}`
+    }
+}
+
+class Car extends Vechile {
+    drive(){
+        return `${this.make} : this is an inheritance example`;
+    }
+}
