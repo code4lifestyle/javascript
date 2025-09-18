@@ -36,4 +36,18 @@ function Person(name,age){
     this.age = age
 }
 let jhon  = new Person('jhon','23');
-console.log(jhon.age)
+// console.log(jhon.age)
+
+function Animal(type){
+    this.type = type
+}
+Animal.prototype.speak = function(){
+    return `${this.type} make a sound`
+}
+Array.prototype.shehzad = function(){
+    return `custom method ${this}`
+    }
+let myArray = [1,2,3,4];
+console.log(myArray.shehzad())
+let mynewArray = [1,2,3,4,5,6,7];
+console.log(mynewArray.shehzad())
