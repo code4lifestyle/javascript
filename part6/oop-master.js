@@ -58,7 +58,7 @@ class Vechile{
     this.model = model
     }
     //method
-    start(){
+    start       (){
         return `this ${this.model}  car is from ${this.make}`
     }
 }
