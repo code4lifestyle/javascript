@@ -74,7 +74,7 @@
 
 // encapsulation 
 
-class BankaccoundData{
+class BankaccountData{
     #balance = 0;
 
     deposit(amount){
@@ -82,8 +82,8 @@ class BankaccoundData{
         return this.#balance 
     }
     getBalance(){
-        `$ ${this.#balance}`;
+        return `$ ${this.#balance}`;
     }
 }
-let account = new Bankaccount();
-console.log(account.balance);
+let account = new BankaccountData();
+console.log(account.getBalance());
