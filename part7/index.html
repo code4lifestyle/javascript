@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: #1a1a1a;
             color: #fff;
             text-align: center !important;
         }
-        .highlight{
+
+        .highlight {
             background-color: white;
             font-weight: bold;
             color: black;
         }
-        .hidden{
+
+        .hidden {
             display: none;
         }
     </style>
 </head>
+
 <body>
     <h1>Javascript Dom Example</h1>
     <!-- accessing DOM element -->
-     <section id="example-1">
+    <section id="example-1">
         <h2>accesing Dom Elements</h2>
         <p id="myParagraph">
             this is paragraph. Click the button to change me
         </p>
         <button id="changeTextButton">Change text</button>
-     </section>
-     <!-- traversing the Dom -->
-      <section id="example-2">
+    </section>
+    <!-- traversing the Dom -->
+    <section id="example-2">
         <h2>Traversing the Dom</h2>
         <ul id="citieslist">
             <li class="chai">NewYork</li>
@@ -40,44 +44,54 @@
             <li>London</li>
         </ul>
         <button id="highlighFirstCity">Highlight First City</button>
-      </section>
+    </section>
 
-      <!-- manipulate Dom Elements -->
-      <section id="example-3">
-         <div id="coffeOrder">Order:<span id="coffeType">Latte</span></div>
-         <button id="changeOrder">change order to espresso</button>
-      </section>
+    <!-- manipulate Dom Elements -->
+    <section id="example-3">
+        <div id="coffeOrder">Order:<span id="coffeType">Latte</span></div>
+        <button id="changeOrder">change order to espresso</button>
+    </section>
 
-      <!-- creating and inserting Element -->
-      <section id="example-4">
+    <!-- creating and inserting Element -->
+    <section id="example-4">
         <h2>creating and insersting element</h2>
         <button id="addNewElement">Add new element to the shoping List</button>
         <ul id="shoppingList">
             <li>Bread</li>
             <li>Milk</li>
         </ul>
-      </section>
+    </section>
 
-      <!-- removing DOM Element -->
-       <section id="example-5">
+    <!-- removing DOM Element -->
+    <section id="example-5">
         <h2>Removing DOM Element</h2>
         <ul id="taskList">
             <li>Task 1</li>
             <li>Task 2</li>
             <li>Task 3</li>
-        </ul> 
+        </ul>
         <button id="removeLastTask">Remove Last Task</button>
-       </section>
+    </section>
 
-         <!-- Example 6 Event handling in the DOM -->
+    <!--Event handling in the DOM -->
     <section id="example-6">
         <h2>Event handling in the DOM</h2>
         <button id="clickMeButton">
             Click ME
         </button>
     </section>
+    <!-- Event Delegation -->
+     <section id="example-7">
+        <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black Tea</li>
+            <li class="teaItem">coffe</li>
+        </ul>
+        <p>Click on any Tea to select it !</p>
+     </section>
 
-    
+
     <script defer src="./script.js"></script>
 </body>
+
 </html>

@@ -30,3 +30,16 @@ document.getElementById('removeLastTask').addEventListener('click',
       let taskList =   document.getElementById('taskList');
       taskList.lastElementChild.remove();
     });
+
+    // Example 6 
+    document.getElementById('clickMeButton').addEventListener
+    ('click', function(){
+        alert('hey i am event handler');
+    });
+
+    // Example 7
+    document.getElementById('teaList').addEventListener('click',function(e){
+        if(e.target && e.target.matches('.teaItem') ){
+            alert('you selected :' + e.target.textContent);
+        }
+    });
