@@ -1,3 +1,4 @@
-// console.log('heloo from js');
-// console.log(window);
-console.log(document)
+document.getElementById("changeTextButton").addEventListener('click', function(){
+   let paragraph =  document.getElementById('myParagraph');
+    paragraph.textContent = "this peragraph is changed"
+})
