@@ -14,7 +14,6 @@ document.getElementById('highlighFirstCity').addEventListener('click', function(
 document.getElementById('changeOrder').addEventListener('click', function(){
     document.getElementById('coffeType')
     coffeType.textContent = "Espresso";
-    console.log(coffeType)
 });
 
 // example 4
@@ -30,5 +29,4 @@ document.getElementById('removeLastTask').addEventListener('click',
     function(){
       let taskList =   document.getElementById('taskList');
       taskList.lastElementChild.remove();
-    }
-)
+    });
