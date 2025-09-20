@@ -11,9 +11,9 @@
             text-align: center !important;
         }
         .highlight{
-            background-color: yellow;
+            background-color: white;
             font-weight: bold;
-            color: #1a1a1a;
+            color: black;
         }
         .hidden{
             display: none;
@@ -34,12 +34,17 @@
       <section id="example-2">
         <h2>Traversing the Dom</h2>
         <ul id="citieslist">
-            <li>NewYork</li>
+            <li class="chai">NewYork</li>
             <li>Tokyo</li>
             <li>Paris</li>
             <li>London</li>
         </ul>
-        <button id="'highlighFirstCity">Highlight First City</button>
+        <button id="highlighFirstCity">Highlight First City</button>
+      </section>
+      <!-- manipulate Dom Elements -->
+      <section id="example-3">
+         <div id="coffeOrder">Order:<span id="coffeType">Latte</span></div>
+         <button id="changeOrder">change order to espresso</button>
       </section>
     <script defer src="./script.js"></script>
 </body>
