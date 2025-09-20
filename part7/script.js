@@ -43,3 +43,9 @@ document.getElementById('removeLastTask').addEventListener('click',
             alert('you selected :' + e.target.textContent);
         }
     });
+    // Example 8
+    document.getElementById('feedbackForm').addEventListener('submit', function(e){
+        e.preventDefault();
+       let feedBack =  document.getElementById('feedbackInput').value;
+       document.getElementById('feedbackDisplay').textContent = `feedback is: ${feedBack}`
+    })
