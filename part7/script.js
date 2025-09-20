@@ -15,4 +15,12 @@ document.getElementById('changeOrder').addEventListener('click', function(){
     document.getElementById('coffeType')
     coffeType.textContent = "Espresso";
     console.log(coffeType)
+});
+
+// example 4
+
+document.getElementById('addNewElement').addEventListener('click', function(){
+   let newItem = document.createElement('li')
+    newItem.textContent = 'eggs'
+    document.getElementById('shoppingList').appendChild(newItem);
 })
