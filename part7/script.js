@@ -9,5 +9,10 @@ document.getElementById("changeTextButton")
 document.getElementById('highlighFirstCity').addEventListener('click', function(){
    let Cities =  document.getElementById('citieslist')
    (citieslist.firstElementChild.classList.add('highlight'))
-
+});
+// Example 3
+document.getElementById('changeOrder').addEventListener('click', function(){
+    document.getElementById('coffeType')
+    coffeType.textContent = "Espresso";
+    console.log(coffeType)
 })
