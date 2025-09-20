@@ -23,4 +23,12 @@ document.getElementById('addNewElement').addEventListener('click', function(){
    let newItem = document.createElement('li')
     newItem.textContent = 'eggs'
     document.getElementById('shoppingList').appendChild(newItem);
-})
+});
+
+// Example 5 Removing DOM element
+document.getElementById('removeLastTask').addEventListener('click',
+    function(){
+      let taskList =   document.getElementById('taskList');
+      taskList.lastElementChild.remove();
+    }
+)
