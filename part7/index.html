@@ -8,11 +8,28 @@
         body{
             background-color: #1a1a1a;
             color: #fff;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .hidden{
+            display: none;
         }
     </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+    <h1>Javascript Dom Example</h1>
+    <!-- accessing DOM element -->
+     <section id="example-1">
+        <h2>accesing Dom Elements</h2>
+        <p id="myParagraph">
+            this is paragraph. Click the button to change me
+        </p>
+        <button id="changeTextButton">Change text</button>
+     </section>
     <script defer src="./script.js"></script>
 </body>
 </html>
