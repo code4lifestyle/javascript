@@ -53,3 +53,8 @@ document.getElementById('removeLastTask').addEventListener('click',
     document.addEventListener('DOMContentLoaded', function(){
         document.getElementById('domStatus').textContent = "Dom fully loaded"
     })
+    // Example 10
+    document.getElementById('toggleHighlight').addEventListener('click', function(){
+        let descriptionText = document.getElementById('descriptionText');
+        descriptionText.classList.toggle('highlight')
+    })
