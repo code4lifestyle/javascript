@@ -48,4 +48,8 @@ document.getElementById('removeLastTask').addEventListener('click',
         e.preventDefault();
        let feedBack =  document.getElementById('feedbackInput').value;
        document.getElementById('feedbackDisplay').textContent = `feedback is: ${feedBack}`
+    });
+    // Example 9
+    document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('domStatus').textContent = "Dom fully loaded"
     })
