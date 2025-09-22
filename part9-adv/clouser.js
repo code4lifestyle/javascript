@@ -7,5 +7,15 @@ function outer(){
         
 }
 let counter = outer();
-console.log(counter())
+console.log(counter());
 // it actullay retain the memory of function
+
+function outerFunction(){
+ let outerVar = "i am from outer function"
+ function innerFunction(){
+     console.log(outerVar)
+ }
+ return innerFunction
+}
+const myClouser = outerFunction;
+myClouser();
