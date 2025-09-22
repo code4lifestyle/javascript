@@ -1,21 +1,32 @@
-function outer(){
-        let counter = 5
-        return function(){
-            counter ++
-            return counter;
-        }
+// function outer(){
+//         let counter = 5
+//         return function(){
+//             counter ++
+//             return counter;
+//         }
         
-}
-let counter = outer();
-console.log(counter());
-// it actullay retain the memory of function
+// }
+// let counter = outer();
+// console.log(counter());
+// // it actullay retain the memory of function
 
-function outerFunction(){
- let outerVar = "i am from outer function"
- function innerFunction(){
-     console.log(outerVar)
- }
- return innerFunction
+// function outerFunction(){
+//  let outerVar = "i am from outer function"
+//  function innerFunction(){
+//      console.log(outerVar)
+//  }
+//  return innerFunction
+// }
+// const myClouser = outerFunction;
+// myClouser();
+
+
+message = "good global"
+function hello1(){
+    message = 'good Morning';
+    {
+    console.log("hello  1", + message)
+
+    }
 }
-const myClouser = outerFunction;
-myClouser();
+hello1();
