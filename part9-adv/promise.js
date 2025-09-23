@@ -40,15 +40,25 @@
 // let update = UpdateData();
 // console.log(update);
 
-let ResultfromServer = fetch(
-    "https://jsonplaceholder.typicode.com/todos"
-).then((response)=>{
-    if(!response.ok) throw console.error('responce is not OK');
-    return response.json();
-}).then((json) => {
-    todos = json.slice(0, 5); // Store first 10 items
-    todos.forEach((todo, index) => {
-      console.log(`Todo ${index + 1}: ID = ${todo.id}, Title = ${todo.title}, completed = ${todo.completed}`);
-    });
-  })
-  .catch((error) => console.error("Error fetching data:", error));
+// let ResultfromServer = fetch(
+//     "https://jsonplaceholder.typicode.com/todos"
+// ).then((response)=>{
+//     if(!response.ok) throw console.error('responce is not OK');
+//     return response.json();
+// }).then((json) => {
+//     todos = json.slice(0, 10);
+//     todos.forEach((todo, index) => {
+//       console.log(`Todo ${index + 1}: ID = ${todo.id}, Title = ${todo.title}, completed = ${todo.completed}`);
+//     });
+//   })
+//   .catch((error) => console.error("Error fetching data:", error));
+let a = 5;
+let b = 10;
+let result = a + b;
+async function getData() {
+    let resultServer = await fetch(
+        "https://jsonplaceholder.typicode.com/todos/3");
+        console.log(resultServer);
+}
+getData();
+console.log(result);
