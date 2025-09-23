@@ -8,3 +8,6 @@ const person = {
 person.greet();
 const GreetFunction = person.greet;
 GreetFunction();
+// ther person name will be undefined in greetfunction
+const bindGreet = person.greet.bind({name:'jhone'});
+bindGreet();
