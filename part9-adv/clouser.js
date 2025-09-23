@@ -21,12 +21,24 @@
 // myClouser();
 
 
-message = "good global"
-function hello1(){
-    message = 'good Morning';
-    {
-    console.log("hello  1", + message)
+// message = "good global"
+// function hello1(){
+//     message = 'good Morning';
+//     {
+//     console.log("hello  1", + message)
 
+//     }
+// }
+// hello1();
+
+function Outer(){
+    let counter = 4;
+    return function(){
+        counter ++
+        return counter;
     }
 }
-hello1();
+let increament = Outer();
+console.log(increament());
+console.log(increament());
+console.log(increament());
