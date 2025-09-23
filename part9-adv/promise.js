@@ -58,7 +58,7 @@ let result = a + b;
 async function getData() {
     let resultServer = await fetch(
         "https://jsonplaceholder.typicode.com/todos/3");
-        console.log(resultServer);
+        console.log(await resultServer.json());
 }
 getData();
 console.log(result);
