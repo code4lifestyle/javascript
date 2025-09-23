@@ -39,6 +39,15 @@ function Outer(){
     }
 }
 let increament = Outer();
-console.log(increament());
-console.log(increament());
-console.log(increament());
+// console.log(increament());
+// console.log(increament());
+// console.log(increament());
+function OuterFunction (){
+    let OuterVariable = "i am outer Variable"
+    function innerFunction(){
+        console.log(OuterVariable)
+    }
+    return innerFunction();
+}
+const Clouser = OuterFunction();
+console.log(OuterFunction());
