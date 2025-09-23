@@ -8,6 +8,8 @@
 // }
 // let counter = outer();
 // console.log(counter());
+// console.log(counter());
+// console.log(counter());
 // // it actullay retain the memory of function
 
 // function outerFunction(){
@@ -31,23 +33,35 @@
 // }
 // hello1();
 
-function Outer(){
-    let counter = 4;
-    return function(){
-        counter ++
-        return counter;
+// function Outer(){
+//     let counter = 4;
+//     return function(){
+//         counter ++
+//         return counter;
+//     }
+// }
+// let increament = Outer();
+// console.log(increament());
+// console.log(increament());
+// console.log(increament());
+// function OuterFunction (){
+//     let OuterVariable = "i am outer Variable"
+//     function innerFunction(){
+//         console.log(OuterVariable)
+//     }
+//     return innerFunction();
+// }
+// const Clouser = OuterFunction();
+// console.log(Clouser);
+
+function main(){
+    let name = "Jhone"
+    function saymyName(){
+        console.log(name);
     }
+    let sayName = saymyName();
+    console.log(sayName);
 }
-let increament = Outer();
-// console.log(increament());
-// console.log(increament());
-// console.log(increament());
-function OuterFunction (){
-    let OuterVariable = "i am outer Variable"
-    function innerFunction(){
-        console.log(OuterVariable)
-    }
-    return innerFunction();
-}
-const Clouser = OuterFunction();
-console.log(OuterFunction());
+let mainfn = main();
+console.log(mainfn);
+
