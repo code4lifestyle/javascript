@@ -6,8 +6,8 @@ function Car(maker,model){
     this.maker = maker,
     this.model = model
 }
-let myPerson = new Person('shehzad',29)
-let myCar = new Car("toyota", "camry")
+// let myPerson = new Person('shehzad',29)
+// let myCar = new Car("toyota", "camry")
 // console.log(myCar);
 // console.log(myPerson);
 function Tea(type){
