@@ -63,16 +63,16 @@
 //     }
 // }
 
-// class Car extends Vechile {
-//     drive(){
-//         return `${this.make} : this is an inheritance example`;
-//     }
-// }
-// let myCar = new Car('toyota','Corola');
-// console.log(myCar.start());
-// console.log(myCar.drive());
+class Car extends Vechile {
+    drive(){
+        return `${this.make} : this is an inheritance example`;
+    }
+}
+let myCar = new Car('toyota','Corola');
+console.log(myCar.start());
+console.log(myCar.drive());
 
-// encapsulation 
+encapsulation 
 
 class BankaccountData{
     #balance = 0;
