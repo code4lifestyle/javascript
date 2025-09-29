@@ -48,21 +48,50 @@
 // }
 // asyncCall();
 
-function fetchuserData(){
-    return new Promise((reject,resolve)=>{
-    setTimeout(() => {
-        resolve({name: "jhon", url:'abc/com'})
-    }, 2000);
+// function fetchuserData(){
+//     return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve({name: "jhon", url:'https://fakestoreapi.com/products'})
+//     }, 3000);
+//     })
+// }
+
+// async function getUserData(){
+//     try{
+//         console.log("fetching user Data........");
+//         const userData = await fetchuserData();
+//         console.log("fetched successfully")
+//         console.log("User data :",userData);
+//     } catch (error){
+//         console.log("there is an error", error);
+//     }
+// }
+// getUserData();
+
+function fetchmsgData(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("msg data fetched")
+        }, 3000);
     })
 }
-
-async function getUserData(){
-    try{
-        console.log("fetching Data");
-        await fetchuserData();
-    } catch (error){
-        console.log("there is an error", error)
-    };
-    
+function commentData(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("comment data fetched");
+        }, 5000);
+    })
 }
-getUserData();
+async function getBlogData(){
+    try {
+        console.log('fetching msg data...');
+        const result1 = await fetchmsgData();
+        console.log(result1);
+        console.log("fetching comment data...")
+        const result2 =  await commentData();
+        console.log(result2);
+    } catch (error) {
+        console.log("there is an Error", error)
+    }
+}
+getBlogData();
