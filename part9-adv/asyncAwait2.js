@@ -33,17 +33,36 @@
 // }
 // getBlogData();
 
-function resolveAfter2second(){
-    return new Promise((resolve)=>{
-        setTimeout(() => {
-            resolve("resolved")
-        }, 2000);
+// function resolveAfter2second(){
+//     return new Promise((resolve)=>{
+//         setTimeout(() => {
+//             resolve("resolved")
+//         }, 2000);
+//     })
+// }
+
+// async function asyncCall(){
+//     console.log("calling");
+//     const result = await resolveAfter2second();
+//     console.log("result is :", result);
+// }
+// asyncCall();
+
+function fetchuserData(){
+    return new Promise((reject,resolve)=>{
+    setTimeout(() => {
+        resolve({name: "jhon", url:'abc/com'})
+    }, 2000);
     })
 }
 
-async function asyncCall(){
-    console.log("calling");
-    const result = await resolveAfter2second();
-    console.log("result is :", result);
+async function getUserData(){
+    try{
+        console.log("fetching Data");
+        await fetchuserData();
+    } catch (error){
+        console.log("there is an error", error)
+    };
+    
 }
-asyncCall();
+getUserData();
