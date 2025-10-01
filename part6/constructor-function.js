@@ -1,11 +1,11 @@
-function Person(name,age){
-    this.name = name,
-    this.age = age
-}
-function Car(maker,model){
-    this.maker = maker,
-    this.model = model
-}
+// function Person(name,age){
+//     this.name = name,
+//     this.age = age
+// }
+// function Car(maker,model){
+//     this.maker = maker,
+//     this.model = model
+// }
 // let myPerson = new Person('shehzad',29)
 // let myCar = new Car("toyota", "camry")
 // console.log(myCar);
