@@ -63,27 +63,27 @@
 //     }
 // }
 
-class Car extends Vechile {
-    drive(){
-        return `${this.make} : this is an inheritance example`;
-    }
-}
-let myCar = new Car('toyota','Corola');
-console.log(myCar.start());
-console.log(myCar.drive());
+// class Car extends Vechile {
+//     drive(){
+//         return `${this.make} : this is an inheritance example`;
+//     }
+// }
+// let myCar = new Car('toyota','Corola');
+// console.log(myCar.start());
+// console.log(myCar.drive());
 
-encapsulation 
+// encapsulation 
 
-class BankaccountData{
-    #balance = 0;
+// class BankaccountData{
+//     #balance = 0;
 
-    deposit(amount){
-        this.#balance +=amount;
-        return this.#balance 
-    }
-    getBalance(){
-        return `$ ${this.#balance}`;
-    }
-}
-let account = new BankaccountData();
-console.log(account.getBalance());
+//     deposit(amount){
+//         this.#balance +=amount;
+//         return this.#balance 
+//     }
+//     getBalance(){
+//         return `$ ${this.#balance}`;
+//     }
+// }
+// let account = new BankaccountData();
+// console.log(account.getBalance());
