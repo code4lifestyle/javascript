@@ -74,16 +74,16 @@
 
 // encapsulation 
 
-// class BankaccountData{
-//     #balance = 0;
+class BankaccountData{
+    #balance = 0;
 
-//     deposit(amount){
-//         this.#balance +=amount;
-//         return this.#balance 
-//     }
-//     getBalance(){
-//         return `$ ${this.#balance}`;
-//     }
-// }
-// let account = new BankaccountData();
-// console.log(account.getBalance());
+    deposit(amount){
+        this.#balance +=amount;
+        return this.#balance 
+    }
+    getBalance(){
+        return `$ ${this.#balance}`;
+    }
+}
+let account = new BankaccountData();
+console.log(account.getBalance());
