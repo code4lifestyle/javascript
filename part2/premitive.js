@@ -10,8 +10,8 @@ let age;
 // console.log(typeof age)
 let firstName = undefined;
 let lastName = null; 
-// console.log( typeof lastName  )
-// console.log(lastName);
+console.log( typeof lastName  )
+console.log(lastName);
 
 // string 
 let string = "hello world"
@@ -21,7 +21,7 @@ let greetMessage = `hello`
 // console.log(typeof string, myStringone, userName, greetMessage);
 let name = "jhone";
 let greetingMsg = `hello ${name} !`;
-// console.log(greetingMsg)
+console.log(greetingMsg)
 let sm1 = Symbol();
 let sm2 = Symbol(); 
 // console.log( sm1 == sm2 )
