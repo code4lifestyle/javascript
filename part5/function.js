@@ -1,14 +1,14 @@
-function makeTea(typeofTea){
-    return `making ${typeofTea}`
-}
-let greet = makeTea('greenTea');
-// console.log(greet);
-function OrderTea(Teatype){
-    function ConfirmOrder(){
-        return`order Confirmed for Chai`
-    }
-    return ConfirmOrder();
-}
+// function makeTea(typeofTea){
+//     return `making ${typeofTea}`
+// }
+// let greet = makeTea('greenTea');
+// // console.log(greet);
+// function OrderTea(Teatype){
+//     function ConfirmOrder(){
+//         return`order Confirmed for Chai`
+//     }
+//     return ConfirmOrder();
+// }
 // let OrderConfirmation = OrderTea('chai')
 // // console.log(OrderConfirmation);
 

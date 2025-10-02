@@ -1,19 +1,19 @@
-let sum = 0;
-let i = 0;
-while(i<= 5){
-    sum = sum + i;
-    sum += 1
-    i++;
-}
+// let sum = 0;
+// let i = 0;
+// while(i<= 5){
+//     sum = sum + i;
+//     sum += 1
+//     i++;
+// }
 // console.log(sum);
 
 let countdown = []
-i = 5
-while(i>=1){
-countdown.push(i);
-i--
-}
-console.log(countdown);
+// i = 5
+// while(i>=1){
+// countdown.push(i);
+// i--
+// }
+// console.log(countdown);
 
 let teaCollection = []
 let tea 
