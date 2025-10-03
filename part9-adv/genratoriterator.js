@@ -4,4 +4,6 @@ function* numberGenrator(){
     yield 3;
 }
 let gen = numberGenrator();
-console.log(gen);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
