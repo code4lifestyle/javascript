@@ -4,6 +4,12 @@ function* numberGenrator(){
     yield 3;
 }
 let gen = numberGenrator();
+let genTwo = numberGenrator();
 console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(genTwo.next().value);
+console.log(genTwo.next().value);
+console.log(genTwo.next().value);
+console.log(genTwo.next().value);
