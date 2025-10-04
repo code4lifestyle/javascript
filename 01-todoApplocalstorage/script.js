@@ -12,7 +12,7 @@ addTask.addEventListener('click', () => {
         text: tasktext,
         completed : false
     }
-    tasks.push(newTask)
-    todoInput.Value = ""
+    tasks.push(newTask);
+    todoInput.value = "";
     console.log(tasks)
 })
