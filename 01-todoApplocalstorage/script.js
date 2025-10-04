@@ -1,18 +1,30 @@
-const todoInput = document.getElementById("todo-input")
-const addTask = document.getElementById("add-task-btn")
-const todoList = document.getElementById("todo-list")
+document.addEventListener("DOMContentLoaded", () => {
+  const todoInput = document.getElementById("todo-input");
+  const addTask = document.getElementById("add-task-btn");
+  const todoList = document.getElementById("todo-list");
 
-let tasks = [];
+  let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  tasks.forEach(task => renderTask(task))
 
-addTask.addEventListener('click', () => {
+  addTask.addEventListener("click", () => {
     const tasktext = todoInput.value.trim();
-    if(tasktext ==="")return;
+    if (tasktext === "") return;
     const newTask = {
-        id: Date.now(),
-        text: tasktext,
-        completed : false
-    }
+      id: Date.now(),
+      text: tasktext,
+      completed: false,
+    };
     tasks.push(newTask);
+    saveTasks();
     todoInput.value = "";
-    console.log(tasks)
-})
+    console.log(tasks);
+  });
+
+  function renderTask(task) {
+    console.log(task);
+  }
+
+  function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
+});
