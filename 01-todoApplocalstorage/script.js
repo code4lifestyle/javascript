@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.forEach((task) => renderTask(task));
-
   addTaskButton.addEventListener("click", () => {
     const taskText = todoInput.value.trim();
     if (taskText === "") return;
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function renderTask(task) {
-    // create element li
     const li = document.createElement("li");
     li.setAttribute("data-id", task.id);
     if (task.completed) li.classList.add("completed");
@@ -46,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     todoList.appendChild(li);
   }
-
   function saveTask() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
