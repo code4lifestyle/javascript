@@ -7,3 +7,24 @@
 .custom_li{
     margin-top: 13px !important;
 }
+.completed{
+    color: rgb(136, 113, 113) !important;
+}
+.task-item button {
+ font-family: inherit;
+  font-size: 13px;
+  background: rgb(216, 0, 0);
+  color: white;
+  margin-left: 12px;
+  margin-top: 19px;
+  height: 24px;
+  align-items: center;
+  border: none;
+  border-radius: none;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+ul li{
+    display: flex !important;
+}
