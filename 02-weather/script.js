@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
     async function fetchWeatherData(city){
-      const url = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid={API_KEY}`;
+      const url = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${API_KEY}`;
       const response = await fetch(url);
       console.log(typeof response);
       console.log("response  is :", response);
