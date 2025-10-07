@@ -4,10 +4,10 @@
 //     age : 28,
 
 // }
-// function getAgeYear(age){
-//    return new Date().getFullYear() - age;
+function getAgeYear(age){
+   return new Date().getFullYear() - age;
 
-// }
+}
 // using encapsulation it will be
 
 const User ={
