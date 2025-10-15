@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const weatherInfo = document.getElementById('weather-info');
   const cityNameDisplay = document.getElementById('city-name');
   const tempratureDisplay = document.getElementById('temperature');
-  const descriptionDisplay = document.getElementById('description')
+  const descriptionDisplay = document.getElementById('description');
   const errorMessage = document.getElementById('error-message');
 
   const API_KEY = "fe7d5b917e2d7670f94be08dfbe71881"
@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if(!city) return;
 
    });
-
+  const cityNameDisplay = document.getElementById('city-name');
+  const tempratureDisplay = document.getElementById('temperature');
+  const descriptionDisplay = document.getElementById('description')
    function fetchWeatherData(city){
       console.log(city);
    }
