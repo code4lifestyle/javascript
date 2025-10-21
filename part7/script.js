@@ -50,9 +50,9 @@ document.getElementById('removeLastTask').addEventListener('click',
        document.getElementById('feedbackDisplay').textContent = `feedback is: ${feedBack}`
     });
     // Example 9
-    document.addEventListener('DOMContentLoaded', function(){
-        document.getElementById('domStatus').textContent = "Dom fully loaded"
-    })
+    // document.addEventListener('DOMContentLoaded', function(){
+    //     document.getElementById('domStatus').textContent = "Dom fully loaded"
+    // })
     // Example 10
     document.getElementById('toggleHighlight').addEventListener('click', function(){
         let descriptionText = document.getElementById('descriptionText');
