@@ -15,13 +15,7 @@
 // }
 // hello1();
 
-// function Outer(){
-//     let counter = 4;
-//     return function(){
-//         counter ++
-//         return counter;
-//     }
-// }
+
 let increament = Outer();
 console.log(increament());
 console.log(increament());

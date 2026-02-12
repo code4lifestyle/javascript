@@ -17,9 +17,6 @@ function fetchCommentData(){
 async function getBlogData(){
     try{
         console.log("fetch blog data getfetchBlogData");
-        // const BlogData = await fetchPostData();
-        // const commentData = await fetchCommentData();
-        // instead of this we can use promise all
         const [posData, commentData]= await Promise.all([
             fetchPostData(), fetchCommentData(),
 
