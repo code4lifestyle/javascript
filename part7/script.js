@@ -16,7 +16,6 @@ document.getElementById('changeOrder').addEventListener('click', function(){
     coffeType.textContent = "Espresso";
 });
 
-// example 4
 
 document.getElementById('addNewElement').addEventListener('click', function(){
    let newItem = document.createElement('li')
